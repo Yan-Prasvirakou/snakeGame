@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="font">Блок для загрузки шрифта</div>
+	<canvas id="game"></canvas>
+
+	<script type='module'>
+		
+		let gameConditions = {
+			element: '#game',
+			width: 608,
+			height: 608,
+			images: {
+				ground: null,
+				carrot: null,
+				headUp: null,
+				headDown: null,
+				headRight: null,
+				headLeft: null,
+			},
+			box: 32,
+			speed: 125
+		}
+
+		import Game from './js/game.js';
+		let game = new Game(gameConditions);
+
+		window.game = game;
+
+	</script>
+
+</body>
+</html>
