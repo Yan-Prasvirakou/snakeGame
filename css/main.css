@@ -11,14 +11,20 @@
 	font-style: normal;
 }
 
+body {
+	overflow: hidden;
+}
+
 #game {
 	display: block;
 	margin: 0 auto;
 }
 
-.font {
-	font: 700 16px 'Balsamiq Sans';
-	position: absolute;
-	color: #000;
-	top: -100px;
+.hints {
+	font: 20px 'Balsamiq Sans';
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	left: 64px;
 }
