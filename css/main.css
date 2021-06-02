@@ -11,9 +11,6 @@
 	font-style: normal;
 }
 
-body {
-	overflow: hidden;
-}
 
 #game {
 	display: block;
@@ -25,6 +22,7 @@ body {
 	color: #fff;
 	text-align: center;
 	position: relative;
-	top: 50px;
-	left: 64px;
+	z-index: 10;
+	margin-top: -45px;
+	letter-spacing: 1px;
 }
